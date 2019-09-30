@@ -5,6 +5,11 @@
     flex-wrap: wrap;
     margin: 0 -16px;
   }
+
+  label.error {
+    color: red;
+    display: block;
+}
   
   .col-25 {
     -ms-flex: 25%; /* IE10 */
