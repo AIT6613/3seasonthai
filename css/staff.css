@@ -491,6 +491,9 @@ input:checked + .slider:before {
 }
 
 
+#orderhistory-container {
+	visibility: hidden;
+}
 .orderhistory .content {
 	display: flex;
 }
