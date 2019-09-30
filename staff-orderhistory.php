@@ -70,9 +70,6 @@
 				</tr>
       </table>
       <div>Summary total amount: {{ summaryTotalAmount | number:2 }}</div> 
-      <div>
-        Test run ctrl. {{ myTest }}
-      </div>
 		</div>
 
 
@@ -162,7 +159,7 @@
 
 
     <script src="js/myApp.js"></script>
-    <script src="js/OrderHistoryCtrl.js"></script>
+    <script src="js/orderHistoryCtrl.js"></script>
     <script src="js/js-function.js"></script>
    
 </body>

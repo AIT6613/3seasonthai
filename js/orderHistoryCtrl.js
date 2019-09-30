@@ -32,8 +32,6 @@ app.controller('OrderHistoryCtrl', function ($scope, $http) {
     $scope.orderList = [];
     $scope.summaryTotalAmount = 0;
 
-    $scope.myTest = "Ha ha ha";
-
     //$scope.getSummaryOrder(2019,9);
     $scope.getAllDeliveryAddress();
     $scope.getOrderList();
