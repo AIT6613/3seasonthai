@@ -28,106 +28,6 @@
     });
   </script>
 
-  <style>
-    /* The Modal (background) */
-    .modal {
-      display: none;
-      /* Hidden by default */
-      position: fixed;
-      /* Stay in place */
-      z-index: 1;
-      /* Sit on top */
-      padding-top: 30px;
-      /* Location of the box */
-      left: 0;
-      top: 0;
-      width: 100%;
-      /* Full width */
-      height: 100%;
-      /* Full height */
-
-      overflow: auto;
-      /* Enable scroll if needed */
-      background-color: rgb(0, 0, 0);
-      /* Fallback color */
-      background-color: rgba(0, 0, 0, 0.4);
-      /* Black w/ opacity */
-    }
-
-    /* Modal Content */
-    .modal-content {
-      position: relative;
-      background-color: #fefefe;
-      margin: auto;
-      padding: 0;
-      border: 1px solid #888;
-      width: 90%;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      -webkit-animation-name: animatetop;
-      -webkit-animation-duration: 0.4s;
-      animation-name: animatetop;
-      animation-duration: 0.4s
-    }
-
-    /* Add Animation */
-    @-webkit-keyframes animatetop {
-      from {
-        top: 0px;
-        opacity: 0
-      }
-
-      to {
-        top: 0;
-        opacity: 1
-      }
-    }
-
-    @keyframes animatetop {
-      from {
-        top: 0px;
-        opacity: 0
-      }
-
-      to {
-        top: 0;
-        opacity: 1
-      }
-    }
-
-    /* The Close Button */
-    .close {
-      color: white;
-      float: right;
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-      color: #000;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .modal-header {
-      padding: 8px 14px;
-      background-color: #007acc;
-      color: white;
-      font-size: 16px;
-    }
-
-    .modal-body {
-      padding: 4px 14px;
-    }
-
-    .modal-footer {
-      padding: 2px 4px;
-      background-color: #007acc;
-      color: white;
-      margin-top: 20px;
-    }
-  </style>
-
 </head>
 
 
@@ -170,6 +70,9 @@
 				</tr>
       </table>
       <div>Summary total amount: {{ summaryTotalAmount | number:2 }}</div> 
+      <div>
+        Test run ctrl. {{ myTest }}
+      </div>
 		</div>
 
 
@@ -203,28 +106,6 @@
     
 
     
-
-
-
-    <!-- The Notification Modal -->
-    <div id="modal" class="modal">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close" onclick="closeModal();">&times;</span>
-        </div>
-
-        <div class="modal-body">
-
-          Test Modal
-          <button>OK</button>
-
-        </div>
-        <div class="modal-footer">
-        </div>
-      </div>
-    </div>
 
 
 
